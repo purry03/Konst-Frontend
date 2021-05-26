@@ -1,0 +1,116 @@
+:root {
+  --light: #fff;
+  --dark: #000;
+  --accent: #5cfe50;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Karla", sans-serif;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  border-radius: 25px;
+  color: var(--dark);
+  background-color: var(--accent);
+  cursor: pointer;
+  transition: background-color 0.5s;
+  transition: color 0.5s;
+}
+
+mark {
+  padding: 5px 15px;
+  background-color: var(--accent);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 25px;
+  color: var(--light);
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(3px);
+  z-index: 99;
+}
+
+.logo-text {
+  margin-right: 25px;
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.nav-list {
+  width: 45%;
+  list-style-type: none;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.log-in-btn {
+  color: var(--light);
+  background-color: transparent;
+  margin-left: auto;
+}
+
+.get-started-btn {
+  margin-left: 25px;
+}
+
+.get-started-btn:hover {
+  background-color: var(--light);
+}
+
+.top-banner {
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  color: var(--light);
+  background: url(../img/banner.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.top-banner-content-wrapper {
+  position: absolute;
+  top: calc(50% + 50px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  height: 75%;
+  width: 90%;
+}
+
+.banner-text-wrapper {
+  width: 85%;
+}
+
+.banner-text-small {
+  font-family: "Karla", sans-serif;
+}
+
+.banner-text-large {
+  margin: 0;
+  font-size: 3.5rem;
+  font-weight: 800;
+  transform: translateX(-5px);
+}
